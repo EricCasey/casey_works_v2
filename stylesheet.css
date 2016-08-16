@@ -1,0 +1,43 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+main {
+	height: 100%;
+	width: 100%;
+	display: inline;
+
+}
+section.half {
+	box-sizing: border-box;
+	height: 101%;
+	width: 50%;
+	z-index; 1;
+	float: left;
+	background: grey;
+
+}
+section.quadrant {
+	display: inline-block;
+	z-index: 2;
+
+}
+#q2 {
+	height: 50%;
+	width: 50%;
+	top: 0px;
+	background: red;
+}
+
+#q3 {
+	height: 50%;
+	width: 50%;
+	top: 0;
+	right: 0;
+	background: blue;
+}
