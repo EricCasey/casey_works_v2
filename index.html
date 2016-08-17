@@ -4,7 +4,56 @@
 
 <meta charset="UTF-8">
 
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <link rel="stylesheet" href="css/stylesheet.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="maincore.js"></script>
+
+
+<script>
+	 $(document).ready(function(e) {   
+    
+    
+$( "div.cover" ).click(function() {
+  $( "div.cover" ).addClass( "active" );
+});
+
+$( "a.overlaylink" ).click(function() {
+  $( "div.cover" ).addClass( "active" );
+});
+
+$( "a.overlaylink" ).click(function() {
+  $( "section.overlay" ).addClass( "active" );
+});
+
+$( "div.cover" ).click(function() {
+  $( "section.overlay" ).addClass( "active" );
+});
+    
+    
+    
+    	$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+    
+ });
+</script>
+
 
 <head></head>
 	
@@ -17,12 +66,195 @@
 		<nav></nav> <! --- now nav rather than li with class --->
 		
 	</header> 
+	
+	<section class="overlay">
+		
+		<a href="http://www.casey.works"><div class="cover centerlogo"><img src="images/EricCaseyheader3.png"/></div></a>
+		
+		<div class="cover left">
+			
+			<section class="overlaycontent con1">
+				<h2><a href="#one" class="overlaylink left">Digital Marketing Services</a></h2>
+				<ul>
+					<li>Service 1</li>
+					<li>Service 2</li>
+					<li>service 3</li>
+					<li>service 4</li>
+					<li>service 5</li>
+				</ul>
+			</section>
+			
+			<section class="overlaycontent con2">
+				<h2><a href="#two" class="overlaylink topright">Data Analysis Services</a></h2>
+				<ul>
+						<li>Service 1</li>
+					<li>Service 2</li>
+					<li>service 3</li>
+					<li>service 4</li>
+					<li>service 5</li>
+				</ul>
+			</section>
+			
+		</div>
+		
+		
+		<div class="cover topright">
+			
+			<section class="overlaycontent con3">
+			<h2><a href="#three" class="overlaylink bottomright">Front-End Services</a></h2>
+			<ul>
+					<li>Service 1</li>
+					<li>Service 2</li>
+					<li>service 3</li>
+					<li>service 4</li>
+					<li>service 5</li>
+				</ul>
+			</section>
+			
+		</div>
+		
+		
+		<div class="cover bottomright">
+			<section class="overlaycontent con4">
+			<h2><a href="#four" class="overlaylink">Back-End Serivces</a></h2>
+			<ul>
+				<li>Service 1</li>
+					<li>Service 2</li>
+					<li>service 3</li>
+					<li>service 4</li>
+					<li>service 5</li>
+				</ul>
+			</section>
+			
+		</div>
+	
+<script>
+
+</script>
+	
+	
+<script>
+
+</script>
+
+		
+	</section>
 		
 	<main class="main">
 	
-	<section class="half"><h2>Section 1</h2></section>  <! --- used instead of div if all content is related --->
-	<section class="quadrant" id="q2"><h2>Section 2</h2></section>
-	<section class="quadrant" id="q3"><h2>Section 3</h2></section>
+	<section class="content1">
+		<h2 id="one">Digital Marketing Services</h2>
+	
+	<article> <! --- where the main content area is --->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex ut sapien mattis euismod. Pellentesque purus justo, fringilla ac ipsum vitae, viverra efficitur dui. Fusce placerat neque in ipsum vehicula facilisis. Duis nulla neque, iaculis eget magna vitae, auctor congue justo. Proin blandit diam et dui lobortis lobortis. Quisque nec metus ac lectus feugiat elementum. Nam eget libero in ipsum lobortis facilisis eget et ipsum. Ut a finibus sapien.
+
+Duis lectus sapien, aliquam nec placerat sed, rutrum ac purus. Integer euismod, enim pharetra porta cursus, eros nisi blandit nisl, vitae bibendum odio metus vitae sem. Nunc eleifend, dolor quis lobortis tempor, sem metus dictum lectus, posuere ornare est ante eu lorem. Mauris facilisis sed sem non ullamcorper. Ut eget lectus sed nunc posuere rhoncus eget sed dolor. Morbi fermentum felis ut sem lacinia, eget mattis magna faucibus. Aenean molestie eu ipsum sit amet euismod.
+
+Donec vestibulum ligula ac turpis tempus, non viverra lacus mattis. Pellentesque lectus quam, commodo eu pulvinar sit amet, lobortis et enim. Nulla sodales lorem sit amet sem elementum, sagittis vestibulum est dignissim. Duis eget iaculis nisi. Morbi at nunc at orci laoreet fermentum. Sed congue dui eget rutrum hendrerit. Nam id ornare erat. Nulla rutrum iaculis nunc, sed pretium metus sagittis non. Praesent sit amet odio vestibulum, varius velit gravida, molestie enim. Aenean maximus blandit velit, ut tincidunt lorem tempor eget. Donec viverra ligula vitae risus egestas, sed pharetra ipsum accumsan. Aliquam sed aliquet erat, vel fermentum ante. Integer porta commodo ex non lobortis. Pellentesque molestie malesuada finibus. Phasellus consequat convallis neque, sit amet maximus tortor semper ac.
+
+Integer tortor purus, consectetur at consequat eget, volutpat ultrices lorem. Ut nibh nisl, ultricies quis lacus sit amet, semper posuere erat. Suspendisse ut tincidunt nulla, ut porta augue. Donec non gravida quam, quis mollis mi. Vivamus tincidunt vestibulum risus vitae tempus. Sed viverra odio nec gravida pharetra. Phasellus dignissim purus felis, a tincidunt nisl dapibus ut. Integer consectetur nisi sed lobortis scelerisque.
+
+Sed vel luctus velit, sit amet molestie nunc. Praesent fermentum diam id convallis dictum. Nullam eget mauris consectetur, aliquam nisi vel, porta nunc. Phasellus mollis lorem interdum posuere finibus. Mauris id ligula nunc. Etiam commodo dapibus tincidunt. Praesent in eros sed nulla ullamcorper faucibus.
+
+Vivamus vel nulla odio. Morbi pharetra, urna vel posuere pellentesque, leo magna vehicula diam, non convallis mi dolor at augue. Nullam rhoncus purus non diam venenatis cursus. Aliquam tortor orci, pellentesque sit amet tempor ac, auctor quis eros. Ut sodales sed est vitae luctus. Phasellus sodales risus in lacus sollicitudin, nec pellentesque diam pulvinar. Sed eget lacus eget purus finibus finibus non in est. Aenean quis varius erat. In ut erat in est malesuada egestas. Suspendisse consequat mi porttitor dolor pretium elementum.
+
+Donec blandit pretium scelerisque. Cras vitae auctor orci, at vehicula velit. Morbi tempor tempus orci, eu pharetra ligula sollicitudin non. Proin interdum ante libero, vitae placerat ante mollis quis. Etiam accumsan mi id dolor tempor fermentum viverra vel purus. Mauris a elit dui. Sed pellentesque mi nulla, eget rhoncus.</p>
+
+			<figure> <! --- where phtos or images related to the articel go --->
+			</figure>
+			
+		</article>
+	
+
+	
+	</section>  <! --- used instead of div if all content is related --->
+	
+	
+	
+	<section class="content2" id="q2">
+		<h2 id="two">Data Analysis Services</h2>
+	
+		<article> <! --- where the main content area is --->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex ut sapien mattis euismod. Pellentesque purus justo, fringilla ac ipsum vitae, viverra efficitur dui. Fusce placerat neque in ipsum vehicula facilisis. Duis nulla neque, iaculis eget magna vitae, auctor congue justo. Proin blandit diam et dui lobortis lobortis. Quisque nec metus ac lectus feugiat elementum. Nam eget libero in ipsum lobortis facilisis eget et ipsum. Ut a finibus sapien.
+
+Duis lectus sapien, aliquam nec placerat sed, rutrum ac purus. Integer euismod, enim pharetra porta cursus, eros nisi blandit nisl, vitae bibendum odio metus vitae sem. Nunc eleifend, dolor quis lobortis tempor, sem metus dictum lectus, posuere ornare est ante eu lorem. Mauris facilisis sed sem non ullamcorper. Ut eget lectus sed nunc posuere rhoncus eget sed dolor. Morbi fermentum felis ut sem lacinia, eget mattis magna faucibus. Aenean molestie eu ipsum sit amet euismod.
+
+Donec vestibulum ligula ac turpis tempus, non viverra lacus mattis. Pellentesque lectus quam, commodo eu pulvinar sit amet, lobortis et enim. Nulla sodales lorem sit amet sem elementum, sagittis vestibulum est dignissim. Duis eget iaculis nisi. Morbi at nunc at orci laoreet fermentum. Sed congue dui eget rutrum hendrerit. Nam id ornare erat. Nulla rutrum iaculis nunc, sed pretium metus sagittis non. Praesent sit amet odio vestibulum, varius velit gravida, molestie enim. Aenean maximus blandit velit, ut tincidunt lorem tempor eget. Donec viverra ligula vitae risus egestas, sed pharetra ipsum accumsan. Aliquam sed aliquet erat, vel fermentum ante. Integer porta commodo ex non lobortis. Pellentesque molestie malesuada finibus. Phasellus consequat convallis neque, sit amet maximus tortor semper ac.
+
+Integer tortor purus, consectetur at consequat eget, volutpat ultrices lorem. Ut nibh nisl, ultricies quis lacus sit amet, semper posuere erat. Suspendisse ut tincidunt nulla, ut porta augue. Donec non gravida quam, quis mollis mi. Vivamus tincidunt vestibulum risus vitae tempus. Sed viverra odio nec gravida pharetra. Phasellus dignissim purus felis, a tincidunt nisl dapibus ut. Integer consectetur nisi sed lobortis scelerisque.
+
+Sed vel luctus velit, sit amet molestie nunc. Praesent fermentum diam id convallis dictum. Nullam eget mauris consectetur, aliquam nisi vel, porta nunc. Phasellus mollis lorem interdum posuere finibus. Mauris id ligula nunc. Etiam commodo dapibus tincidunt. Praesent in eros sed nulla ullamcorper faucibus.
+
+Vivamus vel nulla odio. Morbi pharetra, urna vel posuere pellentesque, leo magna vehicula diam, non convallis mi dolor at augue. Nullam rhoncus purus non diam venenatis cursus. Aliquam tortor orci, pellentesque sit amet tempor ac, auctor quis eros. Ut sodales sed est vitae luctus. Phasellus sodales risus in lacus sollicitudin, nec pellentesque diam pulvinar. Sed eget lacus eget purus finibus finibus non in est. Aenean quis varius erat. In ut erat in est malesuada egestas. Suspendisse consequat mi porttitor dolor pretium elementum.
+
+Donec blandit pretium scelerisque. Cras vitae auctor orci, at vehicula velit. Morbi tempor tempus orci, eu pharetra ligula sollicitudin non. Proin interdum ante libero, vitae placerat ante mollis quis. Etiam accumsan mi id dolor tempor fermentum viverra vel purus. Mauris a elit dui. Sed pellentesque mi nulla, eget rhoncus.</p>
+			
+			
+			<figure> <! --- where phtos or images related to the articel go --->
+			</figure>
+			
+		</article>
+		
+	</section>
+	
+	
+	
+	<section class="content3" id="q3">
+		<h2 id="three">Front-End Services</h2>
+		
+			<article> <! --- where the main content area is --->
+			
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex ut sapien mattis euismod. Pellentesque purus justo, fringilla ac ipsum vitae, viverra efficitur dui. Fusce placerat neque in ipsum vehicula facilisis. Duis nulla neque, iaculis eget magna vitae, auctor congue justo. Proin blandit diam et dui lobortis lobortis. Quisque nec metus ac lectus feugiat elementum. Nam eget libero in ipsum lobortis facilisis eget et ipsum. Ut a finibus sapien.
+
+Duis lectus sapien, aliquam nec placerat sed, rutrum ac purus. Integer euismod, enim pharetra porta cursus, eros nisi blandit nisl, vitae bibendum odio metus vitae sem. Nunc eleifend, dolor quis lobortis tempor, sem metus dictum lectus, posuere ornare est ante eu lorem. Mauris facilisis sed sem non ullamcorper. Ut eget lectus sed nunc posuere rhoncus eget sed dolor. Morbi fermentum felis ut sem lacinia, eget mattis magna faucibus. Aenean molestie eu ipsum sit amet euismod.
+
+Donec vestibulum ligula ac turpis tempus, non viverra lacus mattis. Pellentesque lectus quam, commodo eu pulvinar sit amet, lobortis et enim. Nulla sodales lorem sit amet sem elementum, sagittis vestibulum est dignissim. Duis eget iaculis nisi. Morbi at nunc at orci laoreet fermentum. Sed congue dui eget rutrum hendrerit. Nam id ornare erat. Nulla rutrum iaculis nunc, sed pretium metus sagittis non. Praesent sit amet odio vestibulum, varius velit gravida, molestie enim. Aenean maximus blandit velit, ut tincidunt lorem tempor eget. Donec viverra ligula vitae risus egestas, sed pharetra ipsum accumsan. Aliquam sed aliquet erat, vel fermentum ante. Integer porta commodo ex non lobortis. Pellentesque molestie malesuada finibus. Phasellus consequat convallis neque, sit amet maximus tortor semper ac.
+
+Integer tortor purus, consectetur at consequat eget, volutpat ultrices lorem. Ut nibh nisl, ultricies quis lacus sit amet, semper posuere erat. Suspendisse ut tincidunt nulla, ut porta augue. Donec non gravida quam, quis mollis mi. Vivamus tincidunt vestibulum risus vitae tempus. Sed viverra odio nec gravida pharetra. Phasellus dignissim purus felis, a tincidunt nisl dapibus ut. Integer consectetur nisi sed lobortis scelerisque.
+
+Sed vel luctus velit, sit amet molestie nunc. Praesent fermentum diam id convallis dictum. Nullam eget mauris consectetur, aliquam nisi vel, porta nunc. Phasellus mollis lorem interdum posuere finibus. Mauris id ligula nunc. Etiam commodo dapibus tincidunt. Praesent in eros sed nulla ullamcorper faucibus.
+
+Vivamus vel nulla odio. Morbi pharetra, urna vel posuere pellentesque, leo magna vehicula diam, non convallis mi dolor at augue. Nullam rhoncus purus non diam venenatis cursus. Aliquam tortor orci, pellentesque sit amet tempor ac, auctor quis eros. Ut sodales sed est vitae luctus. Phasellus sodales risus in lacus sollicitudin, nec pellentesque diam pulvinar. Sed eget lacus eget purus finibus finibus non in est. Aenean quis varius erat. In ut erat in est malesuada egestas. Suspendisse consequat mi porttitor dolor pretium elementum.
+
+Donec blandit pretium scelerisque. Cras vitae auctor orci, at vehicula velit. Morbi tempor tempus orci, eu pharetra ligula sollicitudin non. Proin interdum ante libero, vitae placerat ante mollis quis. Etiam accumsan mi id dolor tempor fermentum viverra vel purus. Mauris a elit dui. Sed pellentesque mi nulla, eget rhoncus.</p>	
+		
+			<figure> <! --- where phtos or images related to the articel go --->
+			</figure>
+			
+		</article>
+		
+		
+		</section>
+		
+		
+<section class="content4" id="q4">
+		<h2 id="four">Back-End Services</h2>
+		
+			<article> <! --- where the main content area is --->
+			
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat ex ut sapien mattis euismod. Pellentesque purus justo, fringilla ac ipsum vitae, viverra efficitur dui. Fusce placerat neque in ipsum vehicula facilisis. Duis nulla neque, iaculis eget magna vitae, auctor congue justo. Proin blandit diam et dui lobortis lobortis. Quisque nec metus ac lectus feugiat elementum. Nam eget libero in ipsum lobortis facilisis eget et ipsum. Ut a finibus sapien.
+
+Duis lectus sapien, aliquam nec placerat sed, rutrum ac purus. Integer euismod, enim pharetra porta cursus, eros nisi blandit nisl, vitae bibendum odio metus vitae sem. Nunc eleifend, dolor quis lobortis tempor, sem metus dictum lectus, posuere ornare est ante eu lorem. Mauris facilisis sed sem non ullamcorper. Ut eget lectus sed nunc posuere rhoncus eget sed dolor. Morbi fermentum felis ut sem lacinia, eget mattis magna faucibus. Aenean molestie eu ipsum sit amet euismod.
+
+Donec vestibulum ligula ac turpis tempus, non viverra lacus mattis. Pellentesque lectus quam, commodo eu pulvinar sit amet, lobortis et enim. Nulla sodales lorem sit amet sem elementum, sagittis vestibulum est dignissim. Duis eget iaculis nisi. Morbi at nunc at orci laoreet fermentum. Sed congue dui eget rutrum hendrerit. Nam id ornare erat. Nulla rutrum iaculis nunc, sed pretium metus sagittis non. Praesent sit amet odio vestibulum, varius velit gravida, molestie enim. Aenean maximus blandit velit, ut tincidunt lorem tempor eget. Donec viverra ligula vitae risus egestas, sed pharetra ipsum accumsan. Aliquam sed aliquet erat, vel fermentum ante. Integer porta commodo ex non lobortis. Pellentesque molestie malesuada finibus. Phasellus consequat convallis neque, sit amet maximus tortor semper ac.
+
+Integer tortor purus, consectetur at consequat eget, volutpat ultrices lorem. Ut nibh nisl, ultricies quis lacus sit amet, semper posuere erat. Suspendisse ut tincidunt nulla, ut porta augue. Donec non gravida quam, quis mollis mi. Vivamus tincidunt vestibulum risus vitae tempus. Sed viverra odio nec gravida pharetra. Phasellus dignissim purus felis, a tincidunt nisl dapibus ut. Integer consectetur nisi sed lobortis scelerisque.
+
+Sed vel luctus velit, sit amet molestie nunc. Praesent fermentum diam id convallis dictum. Nullam eget mauris consectetur, aliquam nisi vel, porta nunc. Phasellus mollis lorem interdum posuere finibus. Mauris id ligula nunc. Etiam commodo dapibus tincidunt. Praesent in eros sed nulla ullamcorper faucibus.
+
+Vivamus vel nulla odio. Morbi pharetra, urna vel posuere pellentesque, leo magna vehicula diam, non convallis mi dolor at augue. Nullam rhoncus purus non diam venenatis cursus. Aliquam tortor orci, pellentesque sit amet tempor ac, auctor quis eros. Ut sodales sed est vitae luctus. Phasellus sodales risus in lacus sollicitudin, nec pellentesque diam pulvinar. Sed eget lacus eget purus finibus finibus non in est. Aenean quis varius erat. In ut erat in est malesuada egestas. Suspendisse consequat mi porttitor dolor pretium elementum.
+
+Donec blandit pretium scelerisque. Cras vitae auctor orci, at vehicula velit. Morbi tempor tempus orci, eu pharetra ligula sollicitudin non. Proin interdum ante libero, vitae placerat ante mollis quis. Etiam accumsan mi id dolor tempor fermentum viverra vel purus. Mauris a elit dui. Sed pellentesque mi nulla, eget rhoncus.</p>	
+		
+			<figure> <! --- where phtos or images related to the articel go --->
+			</figure>
+			
+			
+			
+		</article>
+		
+		
+		</section>
 
 	
 	<aside> <! --- used to represent a sidebar or side info related to the website as a whole --->
@@ -32,14 +264,6 @@
 	
 	</main> <! --- where the main content area is --->
 
-		<article> <! --- where the main content area is --->
-			
-			<figure> <! --- where phtos or images related to the articel go --->
-			</figure>
-			
-		</article>
-		
-		
 
 	
 	
